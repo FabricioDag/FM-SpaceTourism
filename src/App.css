@@ -1,6 +1,7 @@
 .App {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   height: 100vh;
-  border: 5px solid yellow;
+  border: 5px solid rgb(0, 255, 238);
 }

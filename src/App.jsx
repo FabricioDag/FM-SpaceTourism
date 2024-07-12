@@ -3,13 +3,13 @@ import { useState } from 'react';
 import './App.css';
 
 import { Header } from './components';
-import { Home, Destination } from './pages';
+import { Home, Destination, Crew } from './pages';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
+      <Crew />
     </div>
   );
 }
