@@ -1,0 +1,22 @@
+.Destination {
+  border: 2px solid green;
+}
+
+/* body {
+  background-image: url(./background-destination-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 450px) {
+  body {
+    background-image: url(./background-destination-tablet.jpg);
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url(./background-destination-desktop.jpg);
+  }
+} */
