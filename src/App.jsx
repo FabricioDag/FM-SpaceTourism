@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './App.css';
 
 import { Header } from './components';
-import { Home, Destination, Crew } from './pages';
+import { Home, Destination, Crew, Technology } from './pages';
 
 function App() {
   return (

@@ -1,6 +1,14 @@
 import style from './Crew.module.css'
+import { useState } from 'react'
+import data from './Crew.json'
 
 const Crew = () =>{
+    const [actual , setActual] = useState(0)
+
+    const handleClick = (id) =>{
+        setActual(id-1)
+    }
+
     return(
 
         <div className={style.Crew}>
@@ -16,20 +24,23 @@ const Crew = () =>{
             </div>
             <hr className={style.Ph} />
 
-            <nav className={style.Nav}>
+            {/* <nav className={style.Nav}>
                 <div className={style.dot}></div>
                 <div className={style.dot}></div>
                 <div className={style.dot}></div>
                 <div className={style.dot}></div>
-            </nav>
+            </nav> */}
 
-            <span>Commander</span>
-            <h1>Douglas Hurley</h1>
-            <p>Douglas Gerald Hurley is an American engineer,
-                former Marine Corps pilot and former NASA
-                astronaut. He launched into space for the third
-                time as commander of Crew Dragon Demo-2
+            <span>{data[actual].subtitle}</span>
+            <h1>{data[actual].title}</h1>
+            <p>{data[actual].texto}
             </p>
+
+            <div>
+                {data.map((e)=>(
+                    <button onClick={()=>handleClick(e.id)}>{e.id}</button>
+                ))}
+            </div>
         </div>
     )
 
