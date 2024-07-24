@@ -6,3 +6,21 @@
     align-items: center;
     text-align: center;
 }
+
+.dot{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.dot:hover{
+    background-color: rgba(255, 255, 255, 0.70);
+}
+
+.dot.active{
+    background-color: white;
+}

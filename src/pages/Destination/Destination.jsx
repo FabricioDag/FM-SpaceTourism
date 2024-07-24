@@ -2,13 +2,20 @@ import style from './Destination.module.css';
 import { useState } from 'react'
 import data from './Destination.json'
 
+import moon from './image-moon.png'
+import mars from './image-mars.png'
+import europa from './image-europa.png'
+import titan from './image-titan.png'
+
 const Destination = () => {
 
   const [actual , setActual] = useState(0)
 
   const handleClick = (value) =>{
     setActual(value)
-}
+} 
+
+  const destinations = [ moon, mars,europa, titan]
 
   return <div className={style.Destination}>
     <h2>
@@ -17,7 +24,7 @@ const Destination = () => {
     </h2>
 
     <div className={style.imageWrapper}>
-      <div className={style.imagePh}></div>
+      <img className={style.imagePh} src={destinations[actual]} alt="" draggable="false" />
     </div>
 
     <nav className={style.Nav}>

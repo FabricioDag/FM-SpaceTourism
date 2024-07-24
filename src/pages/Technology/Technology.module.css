@@ -1,0 +1,58 @@
+.Technology{
+    text-align: center;
+}
+
+.imgLandscape{
+    width: 100%;
+}
+
+.imgPortrait{
+    display: none;
+}
+
+.wrapperBtns{
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.techBtn{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.techBtn:hover{
+    border: 1px solid white;
+}
+
+.techBtn.active{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+/* ------------------- Desktop ------------------- */
+
+@media (min-width: 1440px){
+
+
+    .imgLandscape{
+        display: none;
+    }
+    
+    .imgPortrait{
+        display: block;
+    }
+}
